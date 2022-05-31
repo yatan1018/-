@@ -1,3 +1,15 @@
+const pics = [
+  { id: 1, title: "武勇准源氏 梅枝", author: "歌川国芳" },
+  { id: 4, title: "六様性国芳自慢 仏滅 保里蘭丸", author: "歌川国芳" },
+  { id: 3, title: "英雄大倭十ニ士 丑 山本勘助入道道鬼", author: "歌川国芳" },
+  { id: 2, title: "樋口治郎", author: "歌川国芳" },
+  { id: 5, title: "武英猛勇鏡 巴御前 内田三郎", author: "歌川国芳" },
+  { id: 6, title: "見立十干之内 普請の木 此下猿吉郎", author: "歌川芳房" },
+  { id: 8, title: "巴御前 武蔵三郎左衛門有国", author: "勝川春亭" },
+  { id: 9, title: "柴田勝家", author: "喜多川歌麿" },
+  { id: 10, title: "魁題百撰相 明智左馬之介", author: "月岡芳年" },
+  { id: 11, title: "月百姿 前田玄以", author: "月岡芳年" },
+];
 const run = async () => {
   new Promise(() => {
     let faceImage = document.getElementById("faceSrc");
@@ -157,7 +169,7 @@ const run = async () => {
 
     let rect = new cv.Rect(l, t, r - l, b - t);
 
-    pure_face = face.roi(rect);
+    pure_face = copy.roi(rect);
 
     let size = new cv.Size(back_r - back_l, back_b - back_t);
 
