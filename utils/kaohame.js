@@ -112,9 +112,9 @@ const run = async () => {
     for (let i = 0; i < face_h; i++) {
       for (let j = 0; j < face_w; j++) {
         if (main.ucharPtr(i, j)[0] === 0) {
-          copy.ucharPtr(i, j)[0] = 0;
-          copy.ucharPtr(i, j)[1] = 0;
-          copy.ucharPtr(i, j)[2] = 0;
+          copy.ucharPtr(i, j)[0] = 231;
+          copy.ucharPtr(i, j)[1] = 209;
+          copy.ucharPtr(i, j)[2] = 183;
         }
       }
     }
